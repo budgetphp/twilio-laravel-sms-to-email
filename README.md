@@ -5,13 +5,12 @@
 
 1 Place this line in your .env file
 > ####
-> MAIL_FROM_ADDRESS = 'you@your.com
+> MAIL_FROM_ADDRESS = you@your.com
  ####
 
 2 Create a Laravel database migration using the migration code in this repository as an example
 > ####
-> code
-> linw
+> [code](https://github.com/budgetphp/twilio-laravel-sms-to-email/blob/main/database/migrations/2022_08_30_024950_sms_logs.php)
  ####
 3 Bind the service container with the following code insertions in your blank file and blank file.
 > ####
