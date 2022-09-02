@@ -12,10 +12,11 @@
 > ####
 > [code](https://github.com/budgetphp/twilio-laravel-sms-to-email/blob/main/database/migrations/2022_08_30_024950_sms_logs.php)
  ####
-3 Bind the service container with the following code insertions in your config/app.php.
+3 Bind the service container with the following code insertion in your config/app.php.
 > ####
 >  App\Providers\SmsServiceProvider::class,
-4 Add this line to your routes/api.php routes file
+>  ####
+4 And ddd this line to your routes/api.php routes file
 > ####
 > Route::post('your-url-path', [SmsController::class, 'twilio_sms_webook']);
  ####
