@@ -16,7 +16,7 @@
 > ####
 >  App\Providers\SmsServiceProvider::class,
 >  ####
-4 And ddd this line to your routes/api.php routes file
+4 And add this line to your routes/api.php routes file
 > ####
 > Route::post('your-url-path', [SmsController::class, 'twilio_sms_webook']);
  ####
