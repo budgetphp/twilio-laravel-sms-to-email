@@ -5,8 +5,7 @@
 
 1 Place this line in your .env file
 > ####
-> code
-> linw
+> MAIL_FROM_ADDRESS = 'you@your.com
  ####
 
 2 Create a Laravel database migration using the migration code in this repository as an example
