@@ -12,20 +12,12 @@
 > ####
 > [code](https://github.com/budgetphp/twilio-laravel-sms-to-email/blob/main/database/migrations/2022_08_30_024950_sms_logs.php)
  ####
-3 Bind the service container with the following code insertions in your blank file and blank file.
+3 Bind the service container with the following code insertions in your config/app.php.
 > ####
-> code
-> linw
- ####
- blank.php
- > ####
-> code
-> linw
- ####
-4 Add this line to your api.php routes file
+>  App\Providers\SmsServiceProvider::class,
+4 Add this line to your routes/api.php routes file
 > ####
-> code
-> linw
+> Route::post('your-url-path', [SmsController::class, 'twilio_sms_webook']);
  ####
 5 Enter the webhook URL in your Twilio messaging webhook settings for your Twilio phone number.
 6 Send yourself a test message via SMS and check to see that you received an email additionally check the database for a log of that SMS transaction.
